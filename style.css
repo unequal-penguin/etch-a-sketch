@@ -7,16 +7,42 @@ body {
 }
 
 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
     text-align: center;
-    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
 }
 
 #canvas {
     width: 600px;
     height: 600px;
-    border: 1px solid black;
+    border: 10px solid #c6a86b;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 0 0 10px #a47d54, 0 0 10px rgba(0, 0, 0, 0.4) inset;
+    cursor: pointer;
+}
+
+#grid-btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#grid-btn:hover {
+    background-color: #c6a86b;
 }
 
 .row {
@@ -25,6 +51,6 @@ h1 {
 }
 
 .cell {
-    border: 1px solid black;
+    border: 1px solid rgb(230, 230, 230);
     box-sizing: border-box;
 }
