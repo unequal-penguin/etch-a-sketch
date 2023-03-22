@@ -5,6 +5,8 @@ let mousePressed = false;
 let squareNumber = 16;
 let canvasSize = canvas.clientHeight;
 
+drawGrid(squareNumber);
+
 button.addEventListener("click", changeGridSize);
 
 function drawGrid(squareNumber) {
